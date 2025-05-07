@@ -1,0 +1,433 @@
+
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carousel-title {
+    text-align: center;
+    font-family: Reenie Beanie;
+    font-weight: regular;
+    font-size: 2.1vw;
+    color: #5D5FEF;
+    padding-top: .7%;
+}
+
+.carousel-sub-title,
+.preview-one-title,
+.preview-two-title,
+.preview-three-title,
+.preview-four-title {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 2.1vw;
+    color: #000000;
+}
+
+.original-card {
+    width: 23vw;
+    height: 20vh;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 5%;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body-carousel-section {
+    padding: .5vw !important;
+}
+
+.card-title-carousel-section {
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 1.2vw;
+    color: #000000;
+    margin-top: 4%;
+}
+
+.card-text-carousel-section {
+    font-family: poppins;
+    font-weight: regular;
+    font-size: 1vw;
+    line-height: auto;
+    color: #6E6E6E;
+    margin-top: 3%;
+}
+
+.fa-location-dot {
+    color: #5D5FEF;
+    margin-right: 2%;
+}
+
+.card-title-and-text {
+    height: 14vh;
+    width: 92%;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.card-details {
+    width: 92%;
+    height: 14vh;
+    font-family: poppins;
+    font-weight: regular;
+    font-size: .9vw;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.card-details p {
+    color: #6E6E6E;
+    margin-bottom: 0px;
+}
+
+.card-bottom {
+    width: 92%;
+    height: 14vh;
+    ;
+}
+
+.left-side-title,
+.right-side-title {
+    font-family: poppins;
+    font-weight: regular;
+    font-size: 1.1vw;
+    color: #6E6E6E;
+    margin: 0px;
+}
+
+.left-side-price,
+.right-side-price {
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 1.5vw;
+    color: #000000;
+    margin: 0px;
+}
+
+.right-side .btn {
+    width: 6vw;
+    height: 5vh;
+    border-radius: 7%;
+    /* background-color: #5D5FEF; */
+    border: none;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: .9vw;
+    color: #FFFFFF;
+}
+
+
+.swiper {
+    width: 80%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    .swiper {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .card {
+        width: 92%;
+    }
+
+    .card-title {
+        font-size: 1.6vw;
+    }
+
+    .card-text {
+        font-size: 1.4vw;
+    }
+
+    .card-details {
+        font-size: 1.5vw;
+    }
+
+    .left-side-title {
+        font-size: 1.4vw;
+    }
+
+    .left-side-price {
+        font-size: 2vw;
+    }
+
+    .right-side .btn {
+        width: 9vw;
+        height: 4vh;
+        font-size: 1.1vw;
+    }
+
+
+
+}
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------- */
+
+
+/* preview 01 or archive*/
+
+
+.archive {
+    width: 100%;
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+
+
+.preview-one-row {
+    --bs-gutter-x: 0rem !important;
+}
+
+
+.original-card-left{
+    display: flex !important;
+    align-items: start !important;
+    justify-content: start !important;
+}
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* cover section */
+
+
+.cover-packages img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.cover-packages .centered-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+/* footer */
+
+
+.cover-section-footer {
+    width: 100%;
+    height: 30rem;
+    /* Full viewport height */
+    background: url("assets/footer.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    /* 50% transparent black overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    /* Ensure icons stay within column */
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #ccc;
+    /* Lighter shade on hover */
+  }
+  
+  .text-light {
+    color: #f5f3f3 !important;
+    /* Ensure text-light is visible */
+  }
+  
+  .cover-section {
+    height: 474px !important;
+  }
+  
+  .content h2 {
+    font-size: 1.25rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .content h3 {
+    font-size: 1rem;
+  }
+  
+  .content p {
+    font-size: 0.875rem;
+  }
+  
+  .social-icons a {
+    font-size: 1rem;
+  }
+  
+  .content .btn-primary {
+    margin-inline-start: 0 !important;
+    font-size: 0.875rem;
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .content h2 {
+      font-size: 1.75rem;
+      /* Slightly larger h2 */
+    }
+  
+    .hotage {
+      font-size: 1.5rem !important;
+    }
+  
+    .addre,
+    .brack,
+    .miami,
+    .usa {
+      font-size: 16px !important;
+    }
+  }
+  
+  /* Extra large screens (1200px and above) */
+  @media (min-width: 1200px) {
+  
+    /* Footer */
+    .content h2 {
+      font-size: 2rem;
+      /* Default h2 for extra large screens */
+    }
+  
+    .addre,
+    .brack,
+    .miami,
+    .usa,
+    .contacto,
+    .btneno,
+    .teleph {
+      font-size: 16px !important;
+    }
+  }
+  
+  /* Large screens (992px and above) */
+  @media (min-width: 992px) {
+    .nav-link {
+      font-size: 1.125rem;
+      /* Slightly larger font size (equivalent to fs-5 but a bit larger) */
+    }
+  
+    .cover-packages .centered-text {
+      font-size: 2rem;
+      /* Default font size for large screens */
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+  
+    .addre,
+    .brack,
+    .miami,
+    .usa,
+    .contacto,
+    .btneno,
+    .teleph {
+      font-size: 12px !important;
+      margin-bottom: 0 !important;
+    }
+  
+    .hotage {
+      font-size: 12px !important;
+    }
+  }
+  
+  /* Large screens (992px and above) */
+  @media (min-width: 992px) {
+    .content-overlay {
+      width: 75%;
+      /* Default width for large screens */
+    }
+  }
+  @media (max-width:576px){
+    .devco{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+    .hotage {
+      text-align: center !important;
+    }
+  }

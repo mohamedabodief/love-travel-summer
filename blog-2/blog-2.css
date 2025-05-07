@@ -1,0 +1,291 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+}
+
+.rounded-image {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.teto{
+  position: relative;
+}
+.testimonial-box {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.btn-previous {
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.btn-previous {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 98%;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.testimonial-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.section-spacing h4 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 2.1vw;
+  color: #000000;
+}
+
+
+.blog-2-title {
+  text-align: center;
+  font-family: Reenie Beanie;
+  font-weight: regular;
+  font-size: 2.1vw;
+  color: #5D5FEF;
+  padding-top: 8%;
+}
+
+.blog-2-sub-title {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 2.1vw;
+  color: #000000;
+  padding-bottom: 3%;
+}
+
+
+#blog .card-blog img {
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+#blog .card-blog .card-blog-content {
+  border-radius: 0 0 1rem 1rem;
+}
+
+#blog .card-blog .card-blog-content .date-page {
+  background-color: #434A54;
+  border-radius: .2rem;
+  margin: .7rem 0;
+  padding: .25rem .7rem;
+  width: fit-content;
+}
+
+#blog .card-blog-content .location {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#blog .card-blog-content .desc {
+  font-size: .75rem;
+  color: var(--pColor);
+  margin: .7rem 0;
+  line-height: 150%;
+}
+
+#blog .card-blog-footer .btn-details {
+  padding: .65rem 1.5rem;
+  border-radius: .5rem;
+  background-color: blue;
+  color: white;
+  font-size: .65rem;
+  font-weight: 700;
+}
+
+
+
+
+/* footer */
+
+
+.cover-section-footer {
+  width: 100%;
+  height: 30rem;
+  /* Full viewport height */
+  background: url("assets/footer.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  /* 50% transparent black overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  /* Ensure icons stay within column */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+  /* Lighter shade on hover */
+}
+
+.text-light {
+  color: #f5f3f3 !important;
+  /* Ensure text-light is visible */
+}
+
+.cover-section {
+  height: 474px !important;
+}
+
+.content h2 {
+  font-size: 1.25rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.content h3 {
+  font-size: 1rem;
+}
+
+.content p {
+  font-size: 0.875rem;
+}
+
+.social-icons a {
+  font-size: 1rem;
+}
+
+.content .btn-primary {
+  margin-inline-start: 0 !important;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .content h2 {
+    font-size: 1.75rem;
+    /* Slightly larger h2 */
+  }
+
+  .hotage {
+    font-size: 1.5rem !important;
+  }
+
+  .addre,
+  .brack,
+  .miami,
+  .usa {
+    font-size: 16px !important;
+  }
+}
+
+/* Extra large screens (1200px and above) */
+@media (min-width: 1200px) {
+
+  /* Footer */
+  .content h2 {
+    font-size: 2rem;
+    /* Default h2 for extra large screens */
+  }
+
+  .addre,
+  .brack,
+  .miami,
+  .usa,
+  .contacto,
+  .btneno,
+  .teleph {
+    font-size: 16px !important;
+  }
+}
+
+/* Large screens (992px and above) */
+@media (min-width: 992px) {
+  .nav-link {
+    font-size: 1.125rem;
+    /* Slightly larger font size (equivalent to fs-5 but a bit larger) */
+  }
+
+  .cover-packages .centered-text {
+    font-size: 2rem;
+    /* Default font size for large screens */
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .addre,
+  .brack,
+  .miami,
+  .usa,
+  .contacto,
+  .btneno,
+  .teleph {
+    font-size: 12px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .hotage {
+    font-size: 12px !important;
+  }
+}
+
+/* Large screens (992px and above) */
+@media (min-width: 992px) {
+  .content-overlay {
+    width: 75%;
+    /* Default width for large screens */
+  }
+}
+@media (max-width:576px){
+  .devco{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .hotage {
+    text-align: center !important;
+  }
+}

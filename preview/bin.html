@@ -1,0 +1,153 @@
+<style>
+    body {
+      overflow-x: hidden;
+    }
+    .cover-section {
+      height: 100vh; /* Full viewport height */
+      background: url("images/footimg.jpg") no-repeat center center;
+      background-size: cover;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.1); /* 50% transparent black overlay */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content h2 {
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+      width: 100%; /* Ensure icons stay within column */
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: #ccc; /* Lighter shade on hover */
+    }
+    .text-light {
+      color: #f5f3f3 !important; /* Ensure text-light is visible */
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-gray">
+    <nav class="navbar bg-gray navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-5 text-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">ContactUs</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-primary ms-3" type="submit">
+            Search
+          </button>
+        </div>
+      </div>
+    </nav>
+     </header>
+  <footer>
+    <div class="cover-section">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="row ms-2">
+          <div class="col-md-4">
+            <h2 class="text-center">
+              Travel beyond your imagination, with our Travel Agency!
+            </h2>
+          </div>
+          <div class="col-md-4 flex-column">
+            <div class="text-center">
+              <h3 class="text-white fw-bold">Addreess</h3>
+              <p class="text-light">1080 Brickell Ave</p>
+              <p class="text-light">Miami - Florida</p>
+              <p class="text-light">U.S. of America</p>
+            </div>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.x.com" target="_blank" aria-label="X">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 flex-column ps-1">
+            <div class="text-center">
+              <h3 class="text-white">Contact</h3>
+              <button class="btn btn-primary text-white mt-1 ms-5">
+                info@gmail.com
+              </button>
+              <p class="text-white fw-bold mt-3">+01483593284</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>

@@ -1,0 +1,1374 @@
+body {
+    overflow-x: hidden;
+  }
+  
+  .cover-section {
+    height: 30rem; /* Full viewport height */
+    background: url("images/footager.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .overlay {
+    background: rgba(0, 0, 0, 0.5); /* 50% transparent black overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%; /* Ensure icons stay within column */
+  }
+  .social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    color: #ccc; /* Lighter shade on hover */
+  }
+  .text-light {
+    color: #f5f3f3 !important; /* Ensure text-light is visible */
+  }
+/* 3 sections rehab*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+img{width: 100%;}
+a{text-decoration: none;}
+li{list-style-type: none;}
+.my-30{margin:3rem 0 ;}
+
+:root{
+    --blueColor:#5D5FEF;
+    --yellowColor:#FFD205;
+    --iconsColor: #F3A46B;;
+    --blue-sky:#14B9D5;
+    --white:white;
+    --pColor: #6E6E6E;
+    --purple:#BA71DA;;
+    /* font-size: 10px; */
+}
+
+.yellow{color: var(--yellowColor) !important;}
+.bg-yellow{background-color: var(--yellowColor) !important;}
+.blue{color: var(--blueColor) !important;}
+.bg-blue{background-color: var(--blueColor) !important;}
+.blue-sky{color:var(--blue-sky) !important;}
+.bg-blue-sky{background-color: var(--blue-sky)!important;}
+.purple{color:var(--purple) !important;}
+.bg-purple{background-color: var(--purple)!important;}
+
+.text-top-title {
+    color: var(--blueColor);
+    font-family: Reenie Beanie;
+    font-size: 1.875rem; 
+    font-weight: 500;
+}
+/* ================================================== */
+
+/* Header  */
+#header {
+    background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+                url(./images/header-bg.png) rgb(220, 220, 220) no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    height: 90vh;
+}
+
+#header .heading .text-top-heading {
+    font-size: 1rem; 
+    line-height: 1.5;
+    color: var(--pColor);
+    letter-spacing: 0.0625rem; 
+}
+
+#header .heading .main-heading {
+    font-size: 3.9rem; 
+    font-weight: 700;
+    line-height: 1.2; 
+    margin: 1.25rem 0 3.75rem; 
+}
+@media(max-width:1400px){
+    #header .heading .main-heading {
+        font-size: 3rem; 
+    }
+}
+@media(max-width:1200px){
+    #header .heading .main-heading {
+        font-size: 2.5rem; 
+    }
+}
+@media(max-width:992px){
+    #header .heading .main-heading {
+        font-size: 2rem; 
+    }
+}
+@media(max-width:px){
+    #header .heading .main-heading {
+        font-size: 1.5rem; 
+    }
+}
+#header .main-heading-with-line {
+    position: relative;
+    z-index: 5;
+}
+
+#header .main-heading-with-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.4375rem; 
+    background-color: var(--yellowColor);
+    transform: translateY(-1.0625rem); 
+    z-index: -1;
+}
+/*========= TRIP Plan  ==========================*/
+#tripPlan{
+    background-image: url(./images/plan-trip-bg.png);
+    background-position: right;
+    background-position: calc(125%) top;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+#tripPlan .tripPlan-top-with-bg{
+    margin-bottom: 5rem;
+    margin: 10.375rem 0 8rem 0 ;
+}
+#tripPlan h2{
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin: 1.25rem 0;
+}
+#tripPlan .sec-desc{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: var(--pColor);
+    margin-bottom: 1.25rem;
+}
+#tripPlan .main-btn{
+    padding: 0.9375rem 1.875rem ;
+    border-radius: 0.3125rem;
+    background-color: var(--mainColor);
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+#tripPlan .tripPlan-top-with-bg .top-img-cards{
+    margin-top: 4.375rem;
+}
+/* ==== */
+
+#tripPlan .row .trip-card-top img{
+    border-radius: 0.9375rem;
+}
+#tripPlan .row .trip-card-top .img-layer{
+    top: 0%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    gap: 40px;
+}
+#tripPlan .row .trip-card-top .img-layer p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+#tripPlan .row .trip-card-top  .img-layer i{
+    width: 28%;
+    font-size: 1.875rem;
+}
+
+/* tripPlan Card  */
+#tripPlan .card-tripPlan img{
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+#tripPlan .card-tripPlan .card-tripPlan-content{
+    border-radius: 0 0 0.9375rem 0.9375rem ;
+    padding: 1.875rem;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
+}
+#tripPlan .card-tripPlan .timeInput {
+    border-radius: 0.3125rem; 
+    font-size: 0.875rem; 
+    color: var(--blueColor);
+    box-shadow: 0 0 0.9375rem  rgba(0, 0, 0, 0.10); 
+}
+
+#tripPlan .card-tripPlan .timeInput .left-timeInput .week {
+    color: var(--pColor);
+}
+
+#tripPlan .card-tripPlan-content .location {
+    border-bottom: 1px solid gainsboro;
+    padding: 1.875rem 0 1.25rem; 
+}
+
+#tripPlan .card-tripPlan-content .location h3 {
+    font-size: 1.25rem; 
+    font-weight: 700;
+    margin-bottom: 0.375rem; 
+}
+
+#tripPlan .card-tripPlan-content .location i {
+    font-size: 0.9375rem; 
+    font-weight: 900;
+    color: var(--blueColor);
+    margin-right: 0.8125rem; 
+}
+
+#tripPlan .card-tripPlan-content .location span {
+    font-size: 1rem; 
+    color: var(--pColor);
+}
+
+#tripPlan .card-tripPlan-content .desc {
+    font-size: 1rem; 
+    color: var(--pColor);
+    padding: 1.25rem 0; 
+    border-bottom: 1px solid gainsboro;
+}
+
+#tripPlan .card-tripPlan-footer .btn-details {
+    padding: 0.8125rem 1.875rem; 
+    border-radius: 0.3125rem; 
+    background-color: var(--blueColor);
+    color: var(--white);
+    font-size: 0.84375rem; 
+    font-weight: 700;
+}
+
+#tripPlan .card-tripPlan-footer .price-sec span {
+    font-size: 1rem; 
+    color: var(--pColor);
+    line-height: 1.5rem; 
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+#tripPlan .card-tripPlan-footer .price-sec .price-after {
+    font-size: 1.5625rem; 
+    font-weight: 700;
+    line-height: 2.1875rem; 
+    letter-spacing: 1px;
+}
+
+#tripPlan .card-tripPlan-footer .price-sec .price-before {
+    font-size: 1rem; 
+    font-weight: 700;
+    line-height: 2.1875rem; 
+    opacity: 40%;
+    text-decoration: line-through;
+}
+
+/* ===================================================== */
+
+/* tripPlan padge  */
+#tripPlan .tripPlan_padge{
+    top: 2%;
+    right: 2%;
+    padding: .3125rem .9375rem;
+    border-radius: .9375rem;
+}
+#tripPlan .tripPlan_padge button{
+    font-size: .875rem;
+    letter-spacing: 1px;
+    padding: .3125rem .9375rem;
+    border-radius: .9375rem;
+    
+    color: var(--white);
+    background-color: var(--blueColor);
+}
+
+
+/* ========================================================== */
+/* Start-Vacation */
+/* Start-Vacation */
+#Start-Vacation {
+    background-color: #F2F2F2;
+    padding: 7.5rem 0; 
+}
+
+#Start-Vacation .text-top-title {
+    margin-bottom: 1.5625rem; 
+}
+
+#Start-Vacation .main-title {
+    font-size: 2rem; 
+    font-weight: 700;
+    line-height: 2.8125rem;
+}
+
+#Start-Vacation .second-title {
+    font-size: 1rem; 
+    color: var(--pColor);
+    text-align: center;
+    line-height: 1.5;
+    margin: 1.5625rem auto; 
+}
+
+/* main-list */
+#Start-Vacation .main-list, 
+#header .main-list {
+    width: 65%;
+    border-radius: 0.9375rem; 
+}
+
+#Start-Vacation .main-list ul, 
+#header .main-list ul {
+    padding: 1.25rem 1.875rem; 
+}
+
+#Start-Vacation .main-list ul li i, 
+#header .main-list ul li i {
+    color: var(--iconsColor);
+    font-size: 1.8125rem; 
+    font-weight: 900;
+    margin-left: 0.625rem; 
+}
+
+#Start-Vacation .main-list ul li .main-list-p, 
+#header .main-list ul li .main-list-p {
+    font-size: 1rem;  
+    font-weight: 700;
+    margin-bottom: 0.4375rem;  
+}
+
+#Start-Vacation .main-list ul li .main-list-p2, 
+#header .main-list ul li .main-list-p2 {
+    font-size: 0.8125rem; 
+    color: var(--pColor);
+}
+
+#Start-Vacation .main-list ul li .search-btn, 
+#header .main-list ul li .search-btn {
+    border-radius: 0.625rem; 
+    background: #F76570;
+    color: var(--white);
+    padding: 1.25rem 0 1.3125rem; 
+    font-size: 0.875rem; 
+}
+/* elbordeny*/
+
+/* abodeaf*/
+/* home six section */
+
+/* home six section */
+
+
+.home-section-six{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.section-six-title {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 4vw;
+    color: #000000;
+}
+
+.youtube-container{
+    width: 85%;
+    height: 70vh;
+    margin-inline: auto;
+    
+}
+
+.logos-container{
+    width: 100%;
+    height: 20vh;
+    padding: 2.5vw 15vw;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+/* home seven section */
+
+
+
+  .testimonials-section {
+    background-image: url('images/Section7.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0 60px;
+    position: relative;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  }
+
+  .card-custom {
+    background-color: #5b57f0;
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+  }
+
+  .author-info {
+    text-align: left;
+  }
+
+  .author-info strong {
+    display: block;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .hero-image {
+      margin: 30px auto 0;
+      display: block;
+    }
+
+    .testimonials-content {
+      text-align: center;
+    }
+  }
+
+/* mahmoud samir*/
+
+.Travel_Packages_bg{
+    width: 35%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.Travel_Packages{
+    background-color: white;
+    padding-top: 6rem;
+    margin-bottom: 8.75rem;
+    font-size: 16px;
+    position: relative;
+}
+.Travel_Packages h4{
+    font-family: 'Reenie Beanie', cursive;
+    color: #5D5FEF;
+    font-size: 1.6rem;
+    z-index: 20;
+}
+.Travel_Packages .affordable{
+    font-size: 3.2rem;
+    font-weight:700 ;
+    line-height: 2.4rem;
+    margin: 1rem auto;
+    z-index: 20;
+}
+.Travel_Packages .believe{
+    width: 45%;
+    color: #6E6E6E;
+    font-size: 1.06rem;
+    text-align: center;
+    margin-bottom: 2.0625rem;
+    margin-top: 1.25rem;
+    line-height: 1.2rem;
+    z-index: 20;
+}
+.Travel_Packages .bele{
+    margin-bottom: 3.8125rem;
+}
+.Packages_cards{
+    /* height: 602.8px; */
+    /* width: 100vw; */
+    margin-right: 0 !important;
+    font-size: 16px;
+    z-index: 20;
+}
+.Packages_cards .card_center{
+    /* width: 30%; */
+    height: 602.8px;
+    background-color: #5D5FEF;
+    border-radius: 15px;
+    color: white;
+    /* margin: auto 2.3rem !important; */
+}
+.Packages_cards .card_center h3{
+    font-size: 1.375em;
+    line-height: 1.875em;
+    font-weight: 700;
+}
+.Packages_cards .card_center h2{
+    font-size: 5.5em;
+    /* line-height: 0.5rem; */
+    margin: 1.375rem auto;
+    font-weight: 700;
+}
+.Packages_cards .card_center h2 span{
+    font-size: 1.375rem;
+    line-height: 0.5em;
+}
+.Packages_cards .card_center p{
+    font-size: 1.1em;
+    margin-bottom: 0.8125rem;
+}
+.Packages_cards .card_center p:last-of-type{
+    margin-bottom: 1.375rem;
+}
+.Packages_cards .card_center button{
+    color: white;
+    font-size: 1em;
+    width: 35%;
+    height: 3.025em;
+    background-color: #434A54;
+    border-radius: 0.3125rem;
+    border: none;
+}
+.Packages_cards .card_left{
+    /* width: 27.5%; */
+    height: 548px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    color: black;
+}
+.Packages_cards .card_left h3{
+    font-size: 1.25em;
+    line-height: 1.875em;
+}
+.Packages_cards .card_left h2{
+    font-size: 5em;
+    margin: 1.25rem auto;
+}
+.Packages_cards .card_left h2 span{
+    font-size: 1.25rem;
+    line-height: 0.5em;
+}
+.Packages_cards .card_left p{
+    font-size: 1em;
+    margin-bottom: 0.75rem;
+    color: #6E6E6E;
+}
+.Packages_cards .card_left p:last-of-type{
+    margin-bottom: 1.25rem;
+}
+.Packages_cards .card_left button{
+    color: white;
+    font-size: 0.875em;
+    width: 35%;
+    height: 2.75em;
+    background-color: #5D5FEF;
+    border-radius: 0.3125rem;
+    border: none;
+}
+
+.Packages_cards .card_right{
+    /* width: 27.5%; */
+    height: 548px;
+    background-color: #434A54;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+.Packages_cards .card_right .popular{
+    background-color: #5D5FEF;
+    display: inline-block;
+    width: 23%;
+    border-radius: 5px;
+    font-size: 0.875em;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1.625rem;
+    right: 1.735rem;
+}
+.Packages_cards .card_right h3{
+    font-size: 1.25em;
+    line-height: 1.875em;
+}
+.Packages_cards .card_right h2{
+    font-size: 5em;
+    margin: 1.25rem auto;
+}
+.Packages_cards .card_right h2 span{
+    font-size: 1.25rem;
+    line-height: 0.5em;
+}
+.Packages_cards .card_right p{
+    font-size: 1em;
+    margin-bottom: 0.75rem;
+}
+.Packages_cards .card_right p:last-of-type{
+    margin-bottom: 1.25rem;
+}
+.Packages_cards .card_right button{
+    color: white;
+    font-size: 0.875em;
+    width: 35%;
+    height: 2.75em;
+    background-color: #5D5FEF;
+    border-radius: 0.3125rem;
+    border: none;
+}
+.Travel_Packages .insurance{
+    text-align: center;
+    color: #6E6E6E;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+}
+/*home edited*/
+/*center card*/
+.Packages_cards .edited{
+    width: 27.5%;
+    height: 548px;
+    background-color: #4285F4;
+    border-radius: 15px;
+    color: white;
+}
+.Packages_cards .edited h3{
+    font-size: 1.25em;
+    font-weight: 700;
+    line-height: 1.875em;
+}
+.Packages_cards .edited h2{
+    font-size: 5em;
+    font-weight: 700;
+    margin: 1.25rem auto;
+}
+.Packages_cards .edited h2 span{
+    font-size: 1.25rem;
+    line-height: 0.5em;
+}
+.Packages_cards .edited p{
+    font-size: 1em;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+.Packages_cards .edited p:last-of-type{
+    margin-bottom: 1.25rem;
+}
+.Packages_cards .edited button{
+    color: white;
+    font-weight: 700;
+    font-size: 0.875em;
+    width: 35%;
+    height: 2.75em;
+    background-color: #1D1D54;
+    border-radius: 0.3125rem;
+    border: none;
+}
+/*right card*/
+.Packages_cards .card_right{
+    width: 27.5%;
+    height: 548px;
+    background-color: #EDF2F5;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+.Packages_cards .card_right .popular{
+    background-color: #4285F4;
+    display: inline-block;
+    width: 23%;
+    border-radius: 5px;
+    font-size: 0.875em;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1.625rem;
+    right: 1.735rem;
+    color: black;
+}
+.Packages_cards .card_right h3{
+    font-size: 1.25em;
+    line-height: 1.875em;
+    font-weight: 700;
+    color: black;
+}
+.Packages_cards .card_right h2{
+    font-size: 5em;
+    font-weight: 700;
+    margin: 1.25rem auto;
+    color: black;
+
+}
+.Packages_cards .card_right h2 span{
+    font-size: 1.25rem;
+    line-height: 0.5em;
+    color: black;
+
+}
+.Packages_cards .card_right p{
+    font-size: 1em;
+    margin-bottom: 0.75rem;
+    color: black;
+
+}
+.Packages_cards .card_right p:last-of-type{
+    margin-bottom: 1.25rem;
+}
+.Packages_cards .card_right button{
+    color: black;
+    font-weight: 700;
+    font-size: 0.875em;
+    width: 35%;
+    height: 2.75em;
+    background-color: #4285F4;
+    border-radius: 0.3125rem;
+    border: none;
+}
+/*left card*/
+.Packages_cards .card_left{
+    width: 27.5%;
+    height: 548px;
+    background-color: #EDF2F5;
+    border-radius: 15px;
+    color: #181D4E;
+}
+.Packages_cards .card_left h3{
+    font-size: 1.25em;
+    line-height: 1.875em;
+    font-weight: 700;
+}
+.Packages_cards .card_left h2{
+    font-size: 5em;
+    margin: 1.25rem auto;
+    font-weight: 700;
+}
+.Packages_cards .card_left h2 span{
+    font-size: 1.25rem;
+    line-height: 0.5em;
+}
+.Packages_cards .card_left p{
+    font-size: 1em;
+    margin-bottom: 0.75rem;
+    color: #6E6E6E;
+}
+.Packages_cards .card_left p:last-of-type{
+    margin-bottom: 1.25rem;
+}
+.Packages_cards .card_left button{
+    color: white;
+    font-size: 0.875em;
+    font-weight: 700;
+    width: 35%;
+    height: 2.75em;
+    background-color: #4285F4;
+    border-radius: 0.3125rem;
+    border: none;
+}
+/*end of edit*/
+@media (max-width: 1200px){
+    .Packages_cards{
+        font-size: 12px;
+    }
+    .Packages_cards .card_center{
+        height: 548px;
+        width: 40%;
+    }
+    .Packages_cards .edited{
+        height: 548px;
+    }
+    .Packages_cards .card_left{
+        height: 548px;
+        width: 40%;
+    }
+    .Packages_cards .card_right{
+        height: 548px;
+        width: 40%;
+    }
+    .Travel_Packages .believe{
+        width: 70%;
+    }
+}
+@media (max-width: 992px){
+    .Packages_cards{
+        font-size: 12px;
+    }
+    .Packages_cards .card_center{
+        height: 548px;
+        width: 40%;
+    }
+    .Packages_cards .card_left{
+        height: 548px;
+        width: 40%;
+    }
+    .Packages_cards .card_right{
+        height: 548px;
+        width: 40%;
+        margin-top: 2.3rem;    
+    }
+    
+}
+@media (max-width: 768px){
+    .Packages_cards{
+        font-size: 16px;
+    }
+    .Packages_cards .card_center{
+        height: 548px;
+        width: 80%;
+    }
+    .Packages_cards .card_left{
+        height: 548px;
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+    .Packages_cards .card_right{
+        height: 548px;
+        width: 80%;
+        margin-top: 1.5rem;    
+    }
+    .Travel_Packages .affordable{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 576px){
+    .Travel_Packages .affordable{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px){
+    .Travel_Packages .affordable{
+        font-size: 1.5rem;
+    }
+} 
+/* adventure section */
+/* .adventure_section{
+    width: 45%;
+} */
+.adventure_section h4{
+    font-size: 1.6rem;
+    color: #5D5FEF;
+    font-family: 'Reenie Beanie', cursive;
+    line-height: 2.8125rem;
+    margin-bottom: 1.25rem;
+}
+.adventure_section h2{
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.adventure_section h2:first-of-type{
+    margin-bottom: 0;
+}
+.adventure_section_romantic{
+    margin-top: 1.25rem;
+    color: #6E6E6E;
+    font-size: 0.85rem;
+    width: 92%;
+    margin-bottom: 1.25rem;
+}
+.progress-group p{
+    color: #6E6E6E;
+    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+}
+.progress{
+    background-color: #F1F1F1;
+    width: 96%;
+    height: 5px;
+    margin-bottom: 1.25rem;
+}
+.progress-bar{
+    background-color: #434A54;
+}
+.progress:last-of-type{
+    margin-bottom: 2.5rem;
+}
+.adventure_section button{
+    color: white;
+    background-color: #5D5FEF;
+    width:20%;
+    height: 2.75rem;
+    font-weight: 600;
+    border-radius:0.3125rem ;
+    border: none;
+}
+.Travel_Packages .insure{
+    margin-top: 0.8125rem;
+}
+.next_adventure{
+    margin-bottom: 6rem;
+}
+.next_adventure_img{
+    padding-left: 6rem;
+    padding-right: 0 !important;
+}
+.omegle{
+    padding-left: 3rem;
+}
+.adventure_section {
+    padding-right: 3.125rem;
+    padding-left: 0 !important;
+}
+@media (max-width: 1200px){
+    .adventure_section button{
+        width:30%;
+    }
+    .adventure_section h2{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 992px){
+    /* .adventure_section{
+        width: 60%;
+    } */
+    .adventure_section button{
+        width:25%;
+    }
+    .adventure_section {
+        margin-bottom: 1.5rem;
+        padding-right: 0rem;
+    }
+    .next_adventure_img{
+        padding-left: 0;
+    }
+}
+@media (max-width: 768px){
+    /* .adventure_section{
+        width: 80%;
+    } */
+    .adventure_section h2{
+        font-size: 2rem;
+    }
+    
+}
+@media (max-width: 576px){
+    .adventure_section{
+        /* width: 90%; */
+        margin-bottom: 2rem;
+    }
+    .adventure_section button{
+        width:40%;
+    }
+    .adventure_section h2{
+        font-size: 1.5rem;
+    }
+    /* .next_adventure_img{
+        width: ;
+    } */
+}
+
+/* mahmoud yousri*/
+:root {
+    --cardone-color: #5d5fef;
+  }
+/* svg {
+    margin: auto;
+    margin-top: 20px;
+  } */
+.editedH4{
+    font-size: 1.6rem;
+    color: #5D5FEF;
+    font-family: 'Reenie Beanie', cursive;
+    line-height: 2.8125rem;
+    margin-bottom: 1.25rem;
+}
+  .sec10-head {
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+  }
+  
+  .sec10-title {
+    width: 750px;
+    height: 72px;
+    margin: auto;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 24px; */
+    text-align: center;
+    color: #6e6e6e;
+    margin-bottom: 20px;
+  }
+  
+  .ayhaga {
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   margin-bottom: 3rem;
+   /* margin: auto; */
+  }
+  
+ .sec10-card  .card-body .btn {
+    background-color: var(--cardone-color);
+  }
+  .sec10-card .card-body {
+    padding-left: 0;
+  }
+  .sec10-card-title {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 37.5px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .sec10-card-text {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #6e6e6e;
+  }
+  /* .bondera {
+    width: 207.25px;
+    height: 138.22000122070312px;
+    top: 9454.77px;
+    
+  } */
+  .sec10-cards-title {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .sec10-img-fluid {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 768px){
+    .sec10-title{
+        width: 90%;
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+
+    }
+    .sec10-card-text{
+        font-size: 14px;
+    }
+  }
+  @media (max-width: 576px){
+    .sec10-title{
+        width: 90%;
+        font-size: 12px;
+        margin-bottom: 1.5rem;
+    }
+    .sec10-card-text{
+        font-size: 12px;
+    }
+  }
+
+  /*media query*/
+  /* @media (max-width: 767px) {
+    .navbar-nav {
+      gap: 1rem !important; 
+    }
+    .nav-link {
+      font-size: 0.875rem; 
+    }
+    .btn-outline-primary {
+      margin-inline-start: 0.5rem !important; 
+      font-size: 0.875rem; 
+    }
+    .cover-packages {
+      height: 300px !important; 
+    }
+    .cover-packages .centered-text {
+      font-size: 1.5rem; 
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    } */
+    
+    /* Cards */
+    .row.g-3 {
+      gap: 0.5rem !important; 
+    }
+    .card-img-top {
+      height: 15rem;
+    }
+    .card .position-absolute {
+      width: 90% !important; 
+      margin-bottom: 0.5rem !important; 
+    }
+    .card h3 {
+      font-size: 1.25rem; 
+    }
+    .card p {
+      font-size: 0.875rem; 
+    }
+    /* Footer */
+    .cover-section {
+      height: 474px !important; 
+    }
+    .content h2 {
+      font-size: 1.25rem; 
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    }
+    .content h3 {
+      font-size: 1rem; 
+    }
+    .content p {
+      font-size: 0.875rem; 
+    }
+    .social-icons a {
+      font-size: 1rem; 
+    }
+    .content .btn-primary {
+      margin-inline-start: 0 !important; 
+      font-size: 0.875rem; 
+    }
+  
+
+  /* Medium screens (768px - 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Header */
+    /* .navbar-nav {
+      gap: 2rem !important; 
+    }
+    .nav-link {
+      font-size: 1rem; 
+    }
+    .cover-packages {
+      height: 400px !important; 
+    }
+    .cover-packages .centered-text {
+      font-size: 1.75rem; 
+    } */
+    /* Cards */
+    .card-img-top {
+      height: 18rem; 
+    }
+    .card .position-absolute {
+      width: 80% !important; 
+    }
+    .card h3 {
+      font-size: 1.25rem; 
+    }
+    .card p {
+      font-size: 0.875rem; 
+    }
+    /* Footer */
+    .cover-section {
+      height: 474px !important; 
+    }
+    .content h2 {
+      font-size: 1.5rem; 
+    }
+    .content h3 {
+      font-size: 1.25rem; 
+    }
+    .content p {
+      font-size: 1rem; 
+    }
+    .social-icons a {
+      font-size: 1.25rem; 
+    }
+  }
+
+  /* Large screens (992px - 1199px) */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    .nav-link {
+      font-size: 1.125rem; /* Slightly larger font size (equivalent to fs-5 but a bit larger) */
+    }
+    .cover-packages .centered-text {
+      font-size: 2rem; /* Default font size for large screens */
+    }
+    /* Cards */
+    .card .position-absolute {
+      width: 75% !important; /* Default width for large screens */
+    }
+    /* Footer */
+    .content h2 {
+      font-size: 1.75rem; /* Slightly larger h2 */
+    }
+    .hotage{
+        font-size: 1.5rem !important;
+    }
+    .addre , .brack , .miami , .usa {
+        font-size: 16px !important;
+    }
+  }
+
+  /* Extra large screens (1200px and above) */
+  @media (min-width: 1200px) {
+    /* Header */
+    .cover-packages .centered-text {
+      font-size: 2.5rem; /* Larger font size for extra large screens */
+    }
+    /* Cards */
+    .card h3 {
+      font-size: 1.5rem; /* Larger h3 for extra large screens */
+    }
+    .card p {
+      font-size: 1rem; /* Larger p for extra large screens */
+    }
+    /* Footer */
+    .content h2 {
+      font-size: 2rem; /* Default h2 for extra large screens */
+    }
+    .addre , .brack , .miami , .usa {
+        font-size: 14px !important;
+    }
+  }
+  /* Large screens (992px and above) */
+  @media (min-width: 992px) {
+    .nav-link {
+      font-size: 1.125rem; /* Slightly larger font size (equivalent to fs-5 but a bit larger) */
+    }
+    .cover-packages .centered-text {
+      font-size: 2rem; /* Default font size for large screens */
+    }
+   
+  }
+  @media (max-width: 768px) {
+    .addre , .brack , .miami , .usa , .contacto , .btneno , .teleph {
+        font-size: 12px !important;
+        margin-bottom: 0 !important;
+    }
+    .hotage{
+        font-size: 12px !important;
+    }
+  }
+  /* Card */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .card-img-top {
+      height: 18rem; /* Slightly smaller height for medium screens */
+    }
+    .content-overlay {
+      width: 80%; /* Slightly wider text area */
+    }
+    .content-overlay h3 {
+      font-size: 1.25rem; /* Smaller h3 (equivalent to fs-5) */
+    }
+    .content-overlay p {
+      font-size: 0.875rem; /* Smaller p (equivalent to fs-7) */
+    }
+  }
+
+  /* Large screens (992px and above) */
+  @media (min-width: 992px) {
+    .content-overlay {
+      width: 75%; /* Default width for large screens */
+    }
+  }
+  
+  /* Destinations*/
+  .card-img-top {
+    height: 20rem; /* Match previous card-img height */
+    object-fit: cover; /* Ensure image fits nicely */
+  }
+  .card .text-white h3,
+  .card .text-white p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Add shadow for readability */
+  }
+.distino{
+font-weight: 700 !important;
+}
+.adventuro{
+    margin-top: 7rem;
+    font-family: 'Reenie Beanie', cursive;
+    color: #5D5FEF;
+    font-size: 1.6rem;
+    z-index: 20;
+}
+@media (max-width:992px){
+    .MMM{
+        width: 70% !important;
+    }
+}
+@media (max-width:576px){
+  .devco{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .hotage {
+    text-align: center !important;
+  }
+}
+@media(max-width:992px){
+  #header .heading .main-heading {
+      font-size: 2rem; 
+  margin: .625rem 0 2rem; 
+
+  }
+  #header .heading .main-heading-with-line {
+        position: static;
+  }
+  #header .main-heading-with-line::after {
+      display: none;
+  }
+}
+
+@media(max-width:1400px){
+  .sesco{
+    margin-top: 2rem;
+  }
+}
+@media(max-width:768px){
+  #header .heading .main-heading {
+      font-size: 1.5rem; 
+  }
+  .sesco{
+    margin-top: 10rem;
+  }
+}
